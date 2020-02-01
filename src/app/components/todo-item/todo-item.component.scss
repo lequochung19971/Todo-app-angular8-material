@@ -1,0 +1,38 @@
+.list-item {
+  .item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .mat-icon-button {
+      width: 24px;
+      height: 24px;
+      .material-icons {
+        font-size: 16px;
+      }
+    }
+
+    span {
+      transition: all 0.3s;
+    }
+
+    .mat-checkbox-checked {
+      span {
+        color: #888888;
+        font-size: 15px;
+        text-decoration: line-through;
+      }
+    }
+  }
+  .edit-form {
+    width: 100%;
+    .item-edit-input {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

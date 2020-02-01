@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-list>
+    <app-todo-item
+      *ngFor="let todo of todos$ | async"
+      [todo]="todo"
+      (changeStatus)="onChangeTodoStatus($event)"
+      (editTodo)="onEditTodo($event)"
+      (deleteTodo)="onDeleteTodo($event)"
+    ></app-todo-item>
+  </mat-list>
+</mat-card>
